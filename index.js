@@ -9,6 +9,20 @@ export const pepita = {
   }
 }
 
+export class Golondrina {
+  constructor(nombre, energia = 30) {
+    Object.assign(this, {nombre, energia})
+  }
+
+  vola(km) {
+    this.energia -= km * 2
+  }
+  
+  come(gramos) {
+    this.energia += gramos * 3
+  }
+}
+
 
 export const GolondrinasInmutables = {
   create(nombre, edad = 1, energia = 30) {

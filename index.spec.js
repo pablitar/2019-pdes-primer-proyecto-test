@@ -1,9 +1,17 @@
-import { pepita, GolondrinasInmutables as GI} from './index';
+import { pepita, GolondrinasInmutables as GI, Golondrina} from './index';
 
 describe("pepita basica", () => {
   it("deberia volar y perder energia", () => {
     pepita.vola(2)
     expect(pepita.energia).toEqual(26)
+  })
+})
+
+describe("pepita de clase Golondrina", () => {
+  it("deberia volar y perder energia", () => {
+    const pepita = new Golondrina();
+    pepita.vola(2)
+    expect(pepita.energia).toEqual(25)
   })
 })
 
