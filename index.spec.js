@@ -11,7 +11,7 @@ describe("pepita de clase Golondrina", () => {
   it("deberia volar y perder energia", () => {
     const pepita = new Golondrina();
     pepita.vola(2)
-    expect(pepita.energia).toEqual(25)
+    expect(pepita.energia).toEqual(26)
   })
 })
 
